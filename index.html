@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un amigo de verdad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/logo.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="bg-light">
+    <section class="navbar-section">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <img src="assets/logo.png" alt="Logo de la fundación" width="64px" height="64px"
+                    class="d-inline-block align-text-top">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="ventanaAdopciones()">Adopción</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="ventanaEventos()">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <div class="text-center ">
+        <h1 class="text-center fw-bold text-primary mb-4 text-dark">Un amigo de verdad</h1>
+        <p class="lead">Luchamos por quienes no tienen voz</p>
+    </div>
+
+    <section class="main-section">
+        <section class="section-nosotros" id="about">
+            <div class="container mt-5">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h1 class="text-center fw-bold text-primary mb-4 text-dark"
+                            style="font-family: Courier, monospace; font-style: oblique;">¿Porque empezamos esta labor?
+                        </h1>
+                        <p class="lead">
+                            Todo comenzó con un error, una ignorancia que muchos compartimos: no saber lo que realmente
+                            vive un perrito al ser llevado a una perrera. Al ver la sobrepoblación, el abandono, el
+                            maltrato y la indiferencia de autoridades y ciudadanos, decidí involucrarme profundamente en
+                            esta causa.
+                        </p>
+                        <p class="lead">
+                            Hoy luchamos por cambiar vidas, por dar esperanza, y por demostrar que no todos los seres
+                            humanos somos indiferentes. Esta fundación nace del deseo de transformar el dolor en acción.
+                        </p>
+                        <a href="#services" class="btn btn-primary">Conoce más</a>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="assets/img2.jpeg" alt="Imagen sobre nosotros" class="img-fluid rounded">
+                    </div>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center">
+                        <img src="assets/img6.jpeg" alt="Imagen de un negocio moderno" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="text-center fw-bold text-primary mb-4 text-dark"
+                            style="font-family: Courier, monospace; font-style: oblique;">Acciones que transforman vidas
+                        </h1>
+                        <p class="lead">
+                            Realizamos campañas de esterilización, rescate, adopción y concientización. Trabajamos con
+                            voluntarios, veterinarios y aliados que comparten nuestro compromiso. Cada animalito que
+                            salvamos es una historia de esperanza.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center ">
+            <h1 class="text-center fw-bold text-primary mb-4 text-dark">Misión, Visión y Valores</h1>
+        </div>
+
+        <section class="mvv">
+            <div class="container mb-5 accordion" id="accordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            🧭 Misión
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            Dejar un granito de arena en cada persona para que se sume a esta labor, promoviendo el
+                            bienestar y el cuidado hacia los animales, incluso entre quienes nos visitan como turistas.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            👁️ Visión
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            Que tanto autoridades como ciudadanos actuemos con responsabilidad, y que en cada hogar se
+                            refleje el respeto y el cuidado hacia todo ser vivo, haciendo valer sus derechos.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            💚 Valores
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            Fomentamos la educación desde casa, en las escuelas y en cada ser humano para erradicar el
+                            maltrato animal. Queremos que México sea un referente mundial en respeto y protección
+                            animal, inculcando valores, ejemplos y conciencia a las nuevas generaciones.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section" id="services">
+            <div class="container py-5">
+                <h1 class="text-center fw-bold text-primary text-dark"
+                    style="font-family: Courier, monospace; font-style: oblique;">Nuestros Servicios</h1>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card service-card">
+                            <div class="card-body text-center w-100">
+                                <div class="card-icon">
+                                    <i class="bi bi-calendar-range-fill" style="font-size: 48px;"></i>
+                                </div>
+                                <h5 class="card-title">Eventos</h5>
+                                <p class="card-text">Campañas de vacunación y esterilización.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card service-card">
+                            <div class="card-body text-center w-100">
+                                <div class="card-icon">
+                                    <i class="fa-solid fa-dog fa-2x" style="font-size: 48px;"></i>
+                                </div>
+                                <h5 class="card-title">Adopciones</h5>
+                                <p class="card-text">Encuentra a tu compañero ideal.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card service-card">
+                            <div class="card-body text-center w-100">
+                                <div class="card-icon">
+                                    <i class="bi bi-geo-alt-fill" style="font-size: 48px;"></i>
+                                </div>
+                                <h5 class="card-title">Perdidos</h5>
+                                <p class="card-text"> Ayudamos a encontrar a tu mascota perdida.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section py-5" id="contact">
+            <div class="container mt-5">
+                <div class="row align-items-center">
+                    <h1 class="text-center fw-bold text-primary mb-4 text-dark"
+                        style="font-family: Courier, monospace; font-style: oblique;">Contáctanos</h1>
+                    <p class="text-center text-muted mb-5">¿Quieres saber mas? Llena el formulario y hablemos
+                        🚀
+                    </p>
+
+                    <!-- Formulario -->
+                    <div class="col-md-6">
+                        <div class="card shadow-lg border-0 rounded-4">
+                            <div class="card-body p-4">
+                                <form action="jorgeaxelgarcialara@gmail.com" method="POST">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">
+                                            <i class="bi bi-person-fill me-2 text-primary"></i>Nombre
+                                        </label>
+                                        <input type="text" class="form-control rounded-3" id="name"
+                                            placeholder="Tu nombre">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">
+                                            <i class="bi bi-envelope-fill me-2 text-primary"></i>Correo Electrónico
+                                        </label>
+                                        <input type="email" class="form-control rounded-3" id="email"
+                                            placeholder="Tu correo electrónico">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">
+                                            <i class="bi bi-chat-left-text-fill me-2 text-primary"></i>Mensaje
+                                        </label>
+                                        <textarea class="form-control rounded-3" id="message" rows="4"
+                                            placeholder="Escribe tu mensaje aquí"></textarea>
+                                    </div>
+                                    <button type="submit"
+                                        class="btn btn-primary w-100 py-2 rounded-3 fw-bold">Enviar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagen -->
+                    <div class="col-md-6 text-center">
+                        <img src="assets/img3.jpeg" alt="Imagen sobre nosotros" class="img-fluid rounded"
+                            style="max-width: 90%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <footer class="footer bg-dark text-white mt-5">
+                <div class="container py-2">
+                    <div class="row primary">
+                        <!-- Columna: Sobre nosotros -->
+                        <div class="column about">
+                            <h3>Conecta con nosotros</h3>
+                            <p>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                Facebook, Instagram, Email
+                            </p>
+                            <div class="social">
+                                <a href="https://www.facebook.com/profile.php?id=100069869599534"><i
+                                        class="bi bi-facebook"></i></a>
+                                <a href="instagram.com/A%C5%9Fk%C4%B1%20g%C3%BCzel%20can%C4%B1m"><i class="bi bi-instagram"></i></a>
+                                <a href="Larafloresaraceli@hotmail.com"><i class="bi bi-envelope-at-fill"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Columna: Links -->
+                        <div class="column links">
+                            <h3>Links</h3>
+                            <ul>
+                                <li><a href="#">Inicio</a></li>
+                                <li><a href="#services">Servicios</a></li>
+                                <li><a href="#about">Nosotros</a></li>
+                                <li><a href="#contact">Contáctanos</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Fila final -->
+                        <div class="column final">
+                            <p class="mb-0">&copy; 2024 Un amigo de verdad. Todos los derechos reservados.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
