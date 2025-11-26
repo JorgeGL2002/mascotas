@@ -9,7 +9,7 @@ async function cargarPerritos() {
     const contenedor = document.getElementById("pet-container");
     contenedor.innerHTML = "";
     try {
-        const res = await fetch('https://unamigodeverdadcelaya.vercel.app/api/mascotas/mascotasAdopcion');
+        const res = await fetch('https://api-mascotas-production.up.railway.app/api/mascotas/mascotasAdopcion');
         if (!res.ok) {
             throw new Error('Error en la solicitud: ' + res.status);
         }
@@ -18,7 +18,7 @@ async function cargarPerritos() {
             contenedor.innerHTML = "<p>No hay perritos disponibles para adopción en este momento.</p>";
             return;
         } else {
-            data.array.forEach(element => {
+            data.forEach(element => {
                 const card = document.createElement("div");
                 card.classList.add("col-12", "mt-3");
                 card.innerHTML = `
