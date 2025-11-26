@@ -44,3 +44,7 @@ async function cargarPerritos() {
         console.log("Error al cargar los perritos: " + error);
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    cargarPerritos();
+});
