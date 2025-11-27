@@ -8,6 +8,8 @@ function ventanaInicio() {
 async function cargarPerritos() {
     const contenedor = document.getElementById("pet-container");
     contenedor.innerHTML = "";
+    const card = document.createElement("div");
+    card.classList.add("col-12", "mt-3");
     try {
         const res = await fetch('https://api-mascotas-production.up.railway.app/api/mascotas/mascotasAdopcion');
         if (!res.ok) {
@@ -26,9 +28,7 @@ async function cargarPerritos() {
             `;
             return;
         } else {
-            data.forEach(element => {
-                const card = document.createElement("div");
-                card.classList.add("col-12", "mt-3");
+            data.forEach(element => {}
                 card.innerHTML = `
                 <div class="card notas-card">
                     <div class="card-body text-center">
