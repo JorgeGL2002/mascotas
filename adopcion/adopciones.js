@@ -28,7 +28,7 @@ async function cargarPerritos() {
             `;
             return;
         } else {
-            data.forEach(element => {}
+            data.forEach(element => {
                 card.innerHTML = `
                 <div class="card notas-card">
                     <div class="card-body text-center">
@@ -52,6 +52,8 @@ async function cargarPerritos() {
         console.log("Error al cargar los perritos: " + error);
     }
 }
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
     cargarPerritos();
