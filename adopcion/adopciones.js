@@ -15,7 +15,15 @@ async function cargarPerritos() {
         }
         const data = await res.json();
         if (data.length === 0) {
-            contenedor.innerHTML = "<p>No hay perritos disponibles para adopción en este momento.</p>";
+            card.innerHTML = `
+                <div class="card notas-card">
+                    <div class="card-body text-center">
+                        <div class="card-icon">
+                        <i class="fa-solid fa-triangle-exclamation fa-2x"></i>
+                        <p class="card-text">No hay mascotas para adoptar en este momento</p>
+                    </div>
+                </div>
+            `;
             return;
         } else {
             data.forEach(element => {
