@@ -26,6 +26,7 @@ async function cargarPerritos() {
                     </div>
                 </div>
             `;
+            contenedor.appendChild(card);
             return;
         } else {
             data.forEach(element => {
